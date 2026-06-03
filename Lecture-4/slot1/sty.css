@@ -1,0 +1,34 @@
+div{
+    height: 200px;
+    width: 200px;
+    border: 3px solid black;
+    background-color: orange;
+}
+
+div:hover{
+    background-color: red;
+    border-radius: 50%;
+}
+
+a:visited{
+    color: greenyellow;
+}
+a:active{
+    color: burlywood;
+}
+a:focus{
+    color: aqua;
+}
+
+
+li:first-child{
+    color: rgb(11, 73, 219);
+}
+li:last-child{
+    color: blueviolet;
+}
+
+
+li:nth-child(2n+3){
+    color: cadetblue;
+}
