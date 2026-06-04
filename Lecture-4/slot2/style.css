@@ -1,0 +1,18 @@
+/* child combinator -> direct child */
+article>aside{
+    border:2px solid red;
+}
+
+/* decendent combinator */
+section aside{
+    background-color: yellow;
+}
+/* //adjustent sibling combinator */
+
+article+p{
+    color: orange;
+}
+
+article~p{
+    border :2px dotted greenyellow
+}
