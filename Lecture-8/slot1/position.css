@@ -1,0 +1,14 @@
+section>div{
+    height: 150px;
+    width: 150px;
+    background-color: lightgreen;
+    border: 2px solid black;
+    display:  inline-block;
+}
+#box{
+    top: 60px;
+    right: 40px;
+    position: absolute;
+    /* position: relative; */
+    background-color: lightseagreen;
+}

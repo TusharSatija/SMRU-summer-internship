@@ -1,0 +1,17 @@
+section{
+    height: 200px;
+    width: 80vw;
+    border: 2px solid black;
+    background-color: lightgreen;
+    font-size: 80px;
+}
+
+
+@media screen and (max-width:500px) {
+    section{
+        border: 3px dashed blue;
+        background-color: lightskyblue;
+        font-size: 40px;
+    }
+    
+}
