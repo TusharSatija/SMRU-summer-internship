@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>todo</title>
+</head>
+<body>
+    <h1> list all todo </h1>
+
+    <article>
+       <%  todo.map((data)=>{  %>
+        <section  style=" border: 2px solid black;">
+            <h3> task : <%= data.task %> </h3>
+            <h6> tid : <%= data.tid %> </h6>
+            <h6> status : <%= data.status %> </h6>
+        </section>
+       <%  }) %>
+    </article>
+</body>
+</html>
