@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>show product <%=r1.P_id%></title>
+</head>
+<body>
+    <article style="border: 2px solid black; width: 300px; height: 500px;">
+        <img src="<%= r1[0].P_img %>" alt="" width="240">
+        <h2>Name : <%= r1[0].P_name %></h2>
+        <h2>price : <%= r1[0].P_price%></h2>
+        <h2>qty : <%= r1[0].P_qty %> </h2>
+    </article>
+</body>
+</html>
