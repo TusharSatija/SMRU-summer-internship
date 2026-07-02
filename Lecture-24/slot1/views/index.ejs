@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Products</title>
+</head>
+
+<body>
+    <h1>list of  all Product's</h1>
+    <section>
+        <% p.map((data)=>{ %>
+            <article style="height: 400px; width: 300px; border: 2px solid red;">
+                    <img src="<%= data.P_img%>" alt="" height="200" width="280">
+                    <h4 style="margin: 20px;">Name : <%= data.P_name %> </h4>
+                    <h4 style="margin: 20px;"> qty : <%= data.P_qty %> </h4>
+                    <h4 style="margin: 20px;">P_id : <%= data.P_id %> </h4>
+                    <button><a href="/product/<%= data.P_id %>">show</a></button>
+                    <button><a href="/product/<%= data.P_id %>/edit">Edit</a></button>
+                    
+                    <form action="/product/<%= data.P_id %>?_method=DELETE" method="post">
+                        <button type="submit">DELETE </button>
+                    </form>
+
+            </article>
+        <% }) %>
+    </section>
+</body>
+
+
+</html>
